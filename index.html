@@ -1,34 +1,14 @@
+<script type="module">
+    import React from 'react';
+    import { createRoot } from 'react-dom/client';
 
-<!DOCTYPE html>
-<html lang="vi">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Công Dân Online - Tin tức chính thống & Kiểm chứng tin giả</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <style>
-      body {
-        font-family: 'Inter', sans-serif;
-        background-color: #f9fafb;
-      }
-      .bg-red-vif { background-color: #e30613; }
-      .text-red-vif { color: #e30613; }
-      .border-red-vif { border-color: #e30613; }
-    </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react-dom/": "https://esm.sh/react-dom@^19.2.1/",
-    "@google/genai": "https://esm.sh/@google/genai@^1.33.0",
-    "lucide-react": "https://esm.sh/lucide-react@^0.560.0",
-    "react/": "https://esm.sh/react@^19.2.1/",
-    "react": "https://esm.sh/react@^19.2.1"
-  }
-}
+    const App = () => {
+        return React.createElement('div', { className: 'p-10 text-center' }, 
+            React.createElement('h1', { className: 'text-2xl font-bold text-red-600' }, 'Chào mừng đến với Công Dân Online'),
+            React.createElement('p', { className: 'mt-4' }, 'Nội dung báo cáo sẽ sớm xuất hiện tại đây...')
+        );
+    };
+
+    const root = createRoot(document.getElementById('root'));
+    root.render(React.createElement(App));
 </script>
-</head>
-  <body>
-    <div id="root"></div>
-  </body>
-</html>
