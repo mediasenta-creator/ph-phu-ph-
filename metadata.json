@@ -1,0 +1,7 @@
+{
+  "name": "Công Dân Online",
+  "description": "Trang tổng hợp tin tức chính thống và kiểm chứng tin giả dành cho công dân Việt Nam.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
